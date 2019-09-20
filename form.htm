@@ -1,0 +1,19 @@
+title = "News Editor Form"
+url = "/news/form/:slug?"
+layout = "default"
+is_hidden = 0
+
+[PostForm]
+use_authors = 1
+restrict_owner = 1
+backUser = 1
+allowpublish = 1
+allow_images = 1
+slug = "{{ :slug }}"
+user_groups[] = 19
+listPage = "news/list"
+postPage = "news/story"
+==
+<div class="contain">
+{% component 'PostForm' %}
+</div>

@@ -1,0 +1,16 @@
+title = "News Editor AJAX"
+url = "/news/editor-ajax"
+layout = "default"
+is_hidden = 0
+
+[Ajax]
+use_authors = 1
+category[] = 2
+backUser = 1
+allowpublish = 1
+user_groups[] = 1
+user_groups[] = 5
+user_groups[] = 7
+postPage = "news/story"
+==
+{% component 'Ajax' %}

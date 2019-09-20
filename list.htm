@@ -1,0 +1,15 @@
+title = "News Editor List"
+url = "/news/list"
+layout = "default"
+is_hidden = 0
+
+[PostList]
+use_authors = 1
+restrict_owner = 1
+category[] = 8
+backUser = 1
+formPage = "news/form"
+==
+<div class="contain">
+{% component 'PostList' %}
+</div>
